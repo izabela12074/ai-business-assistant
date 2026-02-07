@@ -1,0 +1,28 @@
+Wciel się w rolę analityka danych pracującego dla firmy z branży retail.
+
+Na podstawie poniższych zagregowanych danych sprzedażowych:
+
+1. Wskaż kluczowe insighty biznesowe
+2. Opisz zachowania klientów
+3. Zidentyfikuj potencjalne ryzyka
+4. Zaproponuj rekomendacje strategiczne
+
+Używaj języka biznesowego.
+Odpowiadaj po polsku.
+
+Całkowity przychód: 456000.00
+
+Liczba transakcji: 1000
+
+Najlepsze kategorie produktowe:
+Product Category
+Electronics    156905
+Clothing       155580
+Beauty         143515
+Name: Total Amount, dtype: int64
+
+Sprzedaż wg płci:
+Gender
+Female    232840
+Male      223160
+Name: Total Amount, dtype: int64
