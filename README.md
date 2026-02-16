@@ -1,4 +1,5 @@
 🤖 AI Business Assistant for Retail Data Analysis
+
 📌 Project Overview
 
 This project presents a simple AI-powered assistant designed to support retail sales data analysis.
