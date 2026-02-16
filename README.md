@@ -44,7 +44,9 @@ The LLM does not process raw transactional data.
 It receives only structured, pre-aggregated metrics to ensure clarity, efficiency, and controlled outputs.
 
 🛠 Scope of Work
+
 1️⃣ Data Preparation
+
 
 Loaded retail sales data from CSV
 
@@ -52,7 +54,9 @@ Calculated key metrics (total revenue, number of transactions)
 
 Aggregated data by product categories and customer gender
 
+
 2️⃣ Analytical Logic (Python)
+
 
 Performed data analysis using Python and pandas
 
@@ -60,7 +64,9 @@ Designed clear metric structures for AI interpretation
 
 Ensured separation between computation and reasoning layers
 
+
 3️⃣ Prompt Engineering
+
 
 Created a dedicated business-oriented prompt (Polish language version)
 
@@ -68,7 +74,9 @@ Focused on strategic recommendations and executive-level language
 
 Structured instructions to control response format and quality
 
+
 4️⃣ AI-Generated Insights
+
 
 The AI generates:
 
@@ -79,6 +87,7 @@ Customer behavior observations
 Potential risks
 
 Strategic recommendations
+
 
 📊 Example Business Questions
 
@@ -117,6 +126,7 @@ Large Language Model (LLM)
 
 Prompt engineering
 
+
 📈 Results
 
 Automated generation of business insights
@@ -126,6 +136,7 @@ Reduced time needed for data interpretation
 Clear communication of findings for decision-makers
 
 This project demonstrates how AI can augment traditional BI workflows rather than replace analytical logic.
+
 
 🚀 Possible Extensions
 
