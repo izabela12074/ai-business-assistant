@@ -1,105 +1,89 @@
-🤖 AI Business Assistant for Retail Data Analysis
+# 🤖 AI Business Assistant – Analiza Danych Sprzedażowych Retail
 
-📌 Project Overview
+> Asystent biznesowy oparty na AI do automatycznego generowania insightów ze sprzedaży detalicznej | Python + LLM + Prompt Engineering
 
-This project presents a simple AI-powered assistant designed to support retail sales data analysis.
-The solution combines Python (data preparation and aggregation) with a Large Language Model (LLM) responsible for interpreting the data and generating business insights.
+## 📌 O projekcie
 
-The project was developed as a Proof of Concept (PoC) demonstrating how AI can support data analysts and management teams in decision-making processes.
+Projekt przedstawia prostego asystenta biznesowego opartego na AI, zaprojektowanego do wsparcia analizy danych sprzedażowych w handlu detalicznym.
 
-🎯 Project Objectives
+Rozwiązanie łączy **Python** (przygotowanie i agregacja danych) z **modelem językowym (LLM)** odpowiedzialnym za interpretację danych i generowanie insightów biznesowych.
 
-Automate business insight generation
+Projekt powstał jako **Proof of Concept (PoC)** demonstrujący jak AI może wspierać analityków danych i zespoły zarządzające w procesach decyzyjnych.
 
-Separate data analysis from business interpretation
+## 🎯 Cele projektu
 
-Demonstrate a practical AI application in business analytics
+- Automatyzacja generowania insightów biznesowych
+- Rozdzielenie analizy danych od interpretacji biznesowej
+- Demonstracja praktycznego zastosowania AI w analityce biznesowej
+- Projekt portfolio dla ról: Analityk Danych / Specjalista ds. AI / BI Analyst
 
-Build a portfolio project for Data Analyst / AI Specialist / BI Analyst roles
+## 🧠 Problem biznesowy
 
-🧠 Business Problem
+Dane sprzedażowe retail są często obszerne i trudne do szybkiej interpretacji. Menedżerowie potrzebują **zwięzłych insightów i rekomendacji działań** – nie surowych tabel czy wykresów.
 
-Retail sales data is often extensive and difficult to interpret quickly.
-Managers require concise insights and actionable recommendations rather than raw tables or charts.
+Projekt demonstruje jak:
+- Python przygotowuje i agreguje kluczowe metryki
+- AI interpretuje strukturalne dane i komunikuje wnioski w języku biznesowym
 
-This project demonstrates how:
+## 🏗️ Architektura rozwiązania
 
-Python prepares and aggregates key metrics
-
-AI interprets structured data and communicates findings in business language
-
-🏗 Solution Architecture
-CSV (sales dataset)
+```
+CSV (dataset sprzedażowy)
         ↓
-Python (pandas – aggregations & KPI calculation)
+Python (pandas – agregacje i kalkulacja KPI)
         ↓
-Prompt + aggregated metrics
+Prompt + zagregowane metryki
         ↓
 AI (LLM)
         ↓
-Business insights & strategic recommendations
+Insighty biznesowe i rekomendacje strategiczne
+```
 
+LLM nie przetwarza surowych danych transakcyjnych – otrzymuje wyłącznie **strukturalne, wstępnie zagregowane metryki**, co zapewnia przejrzystość, efektywność i kontrolę nad wynikami.
 
-The LLM does not process raw transactional data.
-It receives only structured, pre-aggregated metrics to ensure clarity, efficiency, and controlled outputs.
+## 🛠️ Zakres prac
 
-🛠 Scope of Work
+### 1️⃣ Przygotowanie danych
+- Wczytanie danych sprzedażowych z CSV
+- Obliczenie kluczowych metryk (łączny przychód, liczba transakcji)
+- Agregacja danych wg kategorii produktowych i płci klientów
 
-1️⃣ Data Preparation
+### 2️⃣ Logika analityczna (Python)
+- Analiza danych z użyciem Python i pandas
+- Zaprojektowanie czytelnych struktur metryk do interpretacji przez AI
+- Zapewnienie separacji między warstwą obliczeniową a warstwą wnioskowania
 
+### 3️⃣ Prompt Engineering
+- Stworzenie dedykowanego promptu zorientowanego biznesowo (wersja polska)
+- Fokus na rekomendacjach strategicznych i języku executive-level
+- Strukturalne instrukcje kontrolujące format i jakość odpowiedzi
 
-Loaded retail sales data from CSV
+### 4️⃣ Insighty generowane przez AI
+AI generuje:
+- Kluczowe insighty biznesowe
+- Obserwacje dotyczące zachowań klientów
+- Potencjalne ryzyka
+- Rekomendacje strategiczne
 
-Calculated key metrics (total revenue, number of transactions)
+## 📊 Przykładowe pytania biznesowe
 
-Aggregated data by product categories and customer gender
+- Które kategorie produktów generują najwyższy przychód?
+- Które segmenty klientów są najbardziej wartościowe?
+- Czy w danych widoczne są ryzyka biznesowe?
+- Jakie działania mogłyby zwiększyć przychód?
 
+## 🧰 Stack technologiczny
 
-2️⃣ Analytical Logic (Python)
+| Technologia | Zastosowanie |
+|---|---|
+| Python | Backend, przetwarzanie danych |
+| pandas | Agregacja danych i kalkulacja KPI |
+| LLM (model językowy) | Interpretacja danych, generowanie insightów |
+| Prompt Engineering | Kontrola formatu i jakości odpowiedzi AI |
 
+## 📁 Struktura repozytorium
 
-Performed data analysis using Python and pandas
-
-Designed clear metric structures for AI interpretation
-
-Ensured separation between computation and reasoning layers
-
-
-3️⃣ Prompt Engineering
-
-
-Created a dedicated business-oriented prompt (Polish language version)
-
-Focused on strategic recommendations and executive-level language
-
-Structured instructions to control response format and quality
-
-
-4️⃣ AI-Generated Insights
-
-
-The AI generates:
-
-Key business insights
-
-Customer behavior observations
-
-Potential risks
-
-Strategic recommendations
-
-
-📊 Example Business Questions
-
-Which product categories generate the highest revenue?
-
-Which customer segments are most valuable?
-
-Are there visible business risks in the data?
-
-What actions could increase revenue?
-
-📁 Project Structure
+```
 ai-business-assistant/
 │
 ├── data/
@@ -115,39 +99,23 @@ ai-business-assistant/
 │   └── example_response.md
 │
 └── README.md
+```
 
-🧰 Tech Stack
+## 📈 Wyniki
 
-Python
+- Automatyczne generowanie insightów biznesowych
+- Skrócenie czasu potrzebnego na interpretację danych
+- Czytelna komunikacja wniosków dla decydentów
+- Projekt demonstruje jak AI może **uzupełniać** tradycyjne workflow BI, a nie zastępować logiki analitycznej
 
-pandas
+## 🚀 Możliwe rozszerzenia
 
-Large Language Model (LLM)
+- Integracja z Power BI (automatyczny eksport zagregowanych metryk)
+- Obsługa zapytań użytkownika w czasie rzeczywistym
+- Wersja anglojęzyczna asystenta
+- Podstawowy moduł prognozowania sprzedaży
 
-Prompt engineering
+## 👩‍💻 Autor
 
-
-📈 Results
-
-Automated generation of business insights
-
-Reduced time needed for data interpretation
-
-Clear communication of findings for decision-makers
-
-This project demonstrates how AI can augment traditional BI workflows rather than replace analytical logic.
-
-
-🚀 Possible Extensions
-
-Integration with Power BI (automatic export of aggregated metrics)
-
-Real-time user query handling
-
-English-language assistant version
-
-Basic sales forecasting module
-
-👩‍💻 Author
-
-Created as part of a Data Analyst / AI-oriented portfolio project, showcasing practical AI implementation in business analytics.
+**Izabela Popiołek** – Specjalista ds. Digitalizacji | Power BI Developer | AI Analyst  
+[LinkedIn](https://linkedin.com/in/izabela-popiolek) | [GitHub](https://github.com/izabela12074)
